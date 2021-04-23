@@ -13,6 +13,7 @@
 		A7DFD18A2632F784004C005D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DFD1882632F784004C005D /* Main.storyboard */; };
 		A7DFD18C2632F785004C005D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7DFD18B2632F785004C005D /* Assets.xcassets */; };
 		A7DFD18F2632F785004C005D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DFD18D2632F785004C005D /* LaunchScreen.storyboard */; };
+		A7DFD1972632F7EC004C005D /* mushin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A7DFD1962632F7EC004C005D /* mushin.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A7DFD18B2632F785004C005D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7DFD18E2632F785004C005D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7DFD1902632F785004C005D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7DFD1962632F7EC004C005D /* mushin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mushin.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		A7DFD1812632F784004C005D /* 10year */ = {
 			isa = PBXGroup;
 			children = (
+				A7DFD1962632F7EC004C005D /* mushin.otf */,
 				A7DFD1822632F784004C005D /* AppDelegate.swift */,
 				A7DFD1842632F784004C005D /* SceneDelegate.swift */,
 				A7DFD1862632F784004C005D /* ViewController.swift */,
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7DFD18F2632F785004C005D /* LaunchScreen.storyboard in Resources */,
+				A7DFD1972632F7EC004C005D /* mushin.otf in Resources */,
 				A7DFD18C2632F785004C005D /* Assets.xcassets in Resources */,
 				A7DFD18A2632F784004C005D /* Main.storyboard in Resources */,
 			);
