@@ -47,11 +47,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="26" translatesAutoresizingMaskIntoConstraints="NO" id="k2N-5g-9mV">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="26" translatesAutoresizingMaskIntoConstraints="NO" id="k2N-5g-9mV" customClass="sliderImage" customModule="_0year" customModuleProvider="target">
                                 <rect key="frame" x="18" y="591" width="392" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" red="0.93718558549880981" green="0.72105365991592407" blue="0.89238721132278442" alpha="0.48934188740000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" systemColor="systemPurpleColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" value="sliderImage">
+                                        <string key="keyPath">import UIKit
+
+@IBDesignable
+class sliderImage: UISlider {
+
+    @IBInspectable var thumbImage: UIImage? {
+        didSet {
+            setThumbImage(thumbImage, for: .normal)
+        }
+    }
+
+}
+</string>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="sliderImage"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="yearChangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="bhQ-Nw-YbQ"/>
                                 </connections>
@@ -97,6 +115,7 @@
     </scenes>
     <resources>
         <image name="1991" width="2880" height="1615"/>
+        <image name="sliderImage" width="75" height="75"/>
         <image name="背景" width="270" height="405"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
